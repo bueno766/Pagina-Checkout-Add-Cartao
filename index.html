@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Pagamento</title>
+  </head>
+
+  <body>
+    <header class="desktop"> <!--menu desktop-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1 logo">
+              <a class="navbar-brand" href="">
+                <img src="img/logo-n49.png" alt="logo n49" />
+              </a>
+    
+          </div>
+          <!--logo-->
+
+          <div class="col-6 menu" id="btn">
+
+              <li >
+                <a href="#" >Carrinho</a>
+              </li>
+              <li >
+                <a href="#">Idetificação</a>
+              </li>
+              <li >
+                <a href="#" >Pagamento</a>
+              </li>
+              <li >
+                <a href="#" >Confirmação</a>
+              </li>
+            </ul>
+          </div>
+          <!--menu-->
+
+          <div class="col-sm-2 info">
+            <h5>Site 100% seguro</h5>
+          </div>
+          <!--info-->
+        </div>
+      </div>
+    </header>
+
+    <header class="mobile"> <!--menu mobile-->
+      <div class="container">
+        <div class="row">
+            <div class="col link-voltar">
+              <a href="#">Voltar</a>
+            </div>
+            <!---link-->
+            <div class="col logo">
+            <a href="">
+              <img src="img/logo-n49.png" alt="logo n49" />
+            </a>
+          </div>
+          <!--logo-->
+          <div class="col info">
+            <h5>Site 100% seguro</h5>
+          </div>
+          <!--info-->
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">  
+        <div class="col">
+          <div class="menu-mobile">
+            <li >
+              <a href="#" >Carrinho</a>
+            </li>
+            <li >
+              <a href="#">Idetificação</a>
+            </li>
+            <li >
+              <a href="#" >Pagamento</a>
+            </li>
+            <li >
+              <a href="#" >Confirmação</a>
+            </li>
+         </div>
+        </div>
+      </div><!--menu-->
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="link-voltar-inicio">
+            <a href="#">Voltar</a>
+          </div>
+          <!---link-->
+
+          <div class="titulo">
+            <h3>Pagando com cartão de Crédito ou Débito</h3>
+          </div>
+          <!--titulo-->
+          <div class="alterar-cartao">
+            <input type="radio" id="novo-cartao" name="new" checked />
+            <label for="novo-cartao">Novo cartão de Crédito ou Débito</label>
+            <a href="#">Alterar</a>
+          </div>
+          <!--alterar-cartao-->
+
+          <div class="container">
+            <div class="row" id="inverter-colunas">
+              <div class="col-sm">
+                <form id="cc-form" action="">
+                  <h4>Novo cartão:</h4>
+                  <div class="dados-cartao">
+                    <input
+                      type="text"
+                      id="nome"
+                      class="cc-nome"
+                      name="name"
+                      placeholder="Nome no cartão"
+                    />
+                    <input
+                      type="text"
+                      id="numero"
+                      class="cc-num"
+                      name="number"
+                      maxlength="16"
+                      placeholder="Numero do cartão de crédito"
+                    />
+                  </div>
+                  <!--dados-cartao-->
+                  <div class="expiracao">
+                    <input
+                      type="text"
+                      id="data"
+                      class="date"
+                      name="expiry"
+                      placeholder="Data de expiração"
+                    />
+                    <input
+                      type="password"
+                      id="cvc"
+                      class="cvc"
+                      name="cvc"
+                      placeholder="Código CVV"
+                    />
+                  </div>
+                  <!--expiracao-->
+                  <div class="dados-titular">
+                    <input
+                      type="text"
+                      id="cpf"
+                      class="cpf"
+                      maxlength="14"
+                      placeholder="CPF do titular"
+                    />
+                    <select>
+                      <option>Número de parcelas</option>
+                      <option>1x</option>
+                      <option>2x</option>
+                      <option>3x</option>
+                      <option>4x</option>
+                      <option>5x</option>
+                      <option>6x</option>
+                      <option>7x</option>
+                      <option>8x</option>
+                      <option>9x</option>
+                      <option>10x</option>
+                      <option>11x</option>
+                      <option>12x</option>
+                    </select>
+                  </div>
+                  <br />
+                  <!--dados-titular-->
+                  <input type="checkbox" id="salvar" name="salvar" value="ok" />
+                  <label class="salvar" for="salvar"
+                    >Salvar informações do cartão para próxima compra</label
+                  ><br />
+                  <div class="botao">
+                    <button type="button" class="btn btn-primary">
+                      Adicionar cartão
+                    </button>
+                  </div>
+                  <!--botao-->
+                </form>
+              </div>
+              <!--coluna formulário-->
+
+              <div class="col-sm">
+                <div class="cartao">
+                  <div class="selo">
+                    <img width="50" src="img/chip.png" />
+                  </div>
+                  <!--selo-->
+                  <h5>Cartão de Credito</h5>
+                  <br /><br />
+                  <div class="confirm">
+                    <h3 id="number" class="numero">
+                      &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679;
+                      &#9679;&#9679;&#9679;&#9679; 0000
+                    </h3>
+                    <div id="cvv">
+                      <span id="cod" style="float: right"
+                        >CVV<br /><em>&#9679;&#9679;&#9679;</em></span
+                      >
+                    </div>
+                  </div>
+                  <!--confirm-->
+                  <span id="name" class="nome">Nome do cartão</span>
+                  <span id="date" class="data">00/0000</span>
+                </div>
+                <!--cartao-->
+                <div class="info-cripto">
+                  <p>
+                    Este pagamento é seguro, realizado em<br /><b
+                      >ambiente criptografado</b
+                    >
+                  </p>
+                </div>
+                <!--info cripto-->
+              </div>
+              <!--coluna cartão animado-->
+            </div>
+          </div>
+          <!--sessao formulario e cartão animado--->
+        </div>
+        <!--coluna alterar cartão-->
+
+        <div class="col">
+          <div class="resumo">
+            <h3>Resumo do Pedido</h3>
+            <p>Subtotal &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;R$ 540,00</p>
+            <p>Descontos &emsp;&emsp;&emsp;&emsp;&emsp;-R$ 15,00</p>
+            <p>Cupom &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;-R$ 30,00</p>
+            <p>
+              Frete &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Grátis
+            </p>
+            <p>
+              Pontos &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; -R$ 5,90<br /><br />
+            </p>
+            <h4>Total &emsp;&emsp;&emsp;&emsp;R$ 540,00</h4>
+          </div>
+        </div>
+        <!--coluna resumo do pedido-->
+      </div>
+    </div>
+    <!--container coluna adicionar cartao e resumo do pedido-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md widget-1">
+            <h4>Segurança</h4>
+            <img width="180px" src="img/seguranca.png" alt="segurança" />
+          </div>
+          <div class="col-md-6 widget-2">
+            <h4>Formas de Pagamento</h4>
+            <img width="500px" src="img/pagamentos.png" alt="pagamentos" />
+          </div>
+          <div class="col-md widget-3">
+            <h4>Atendimento</h4>
+            <p>
+              (11)3022-0123 <br />
+              sac@lojaonline.com.br
+            </p>
+          </div>
+        </div>
+
+        <div class="row infos-rodape">
+          <div class="col-9 infos">
+            <p>
+              LDF Industria e Comercio de Confeccao Eireli - ME | CPNJ
+              27.339.285/0001-46 | Avenida Valencia, quadra 33, lote 10/11,
+              Setor Três Marias I, Goiânia, Goiás, Cep 74369-620 | Copyright ©
+              agestante.com.br - Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="col-2 logo-rodape">
+            <img width="100px" src="img/logo-rodape.png" alt="segurança" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
